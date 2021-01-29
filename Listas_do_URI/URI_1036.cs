@@ -12,16 +12,18 @@ class Bhaskara
 
         double delta = b * b - (4 * a * c);
 
-        if (delta < 0 || 2 * a == 0) 
+        if (delta < 0 || 2 * a == 0)
+        { 
             Console.WriteLine("Impossivel calcular");
+        }
         else
         {
             //RAIZES
             double r1 = (-b - Math.Sqrt(delta)) / (2 * a);
             double r2 = (-b + Math.Sqrt(delta)) / (2 * a);
 
-            Console.WriteLine($"R1 = {r2:0.00000}");
-            Console.WriteLine($"R2 = {r1:0.00000}");
+            Console.WriteLine("R1 = {0:0.00000}"r2);
+            Console.WriteLine("R2 = {0:0.00000}"r1);
         }
             
     }
