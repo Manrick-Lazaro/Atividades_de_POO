@@ -5,12 +5,12 @@ class Media{
   public int n1, n2, n3, n4, notaFinal;
 
   public double MediaParcial(){
-    int somados = (n1 * 2) + (n2 * 2) + (n3 * 3) + (n3 * 3);
+    int somados = (n1 * 2) + (n2 * 2) + (n3 * 3) + (n4 * 3);
     double media = somados / 10;
     return media;
   }
   public double MediaFinal(){
-    int somados = (n1 * 2) + (n2 * 2) + (n3 * 3) + (n3 * 3);
+    int somados = (n1 * 2) + (n2 * 2) + (n3 * 3) + (n4 * 3);
     double media = somados / 10;
     double mediaF = (media + notaFinal) / 2;
     return mediaF;
