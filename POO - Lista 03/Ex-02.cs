@@ -28,7 +28,7 @@ class Frete
     return peso;
   }
 
-  public double CalcFrete (double distancia, double peso)
+  public double CalcFrete ()
   {
     // peso * 0.01 * distancia == Frete
     return ((peso * 0.01) * distancia);

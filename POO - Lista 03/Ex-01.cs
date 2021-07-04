@@ -28,11 +28,11 @@ class Retangulo
     return h;
   }
 
-  public double CalcArea (double b, double h)
+  public double CalcArea ()
   {
     return b * h;
   }
-  public double CalcDiagonal (double b, double h)
+  public double CalcDiagonal ()
   {
     return ((b * h) / 2);
   }
