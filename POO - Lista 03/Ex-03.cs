@@ -10,21 +10,25 @@ class ConversorDB {
   public void SetNumero (int numero) {
     if (numero > 0) this.numero = numero;
   }
-  public int GetNumero (int numero) {
-    return 0;
+  public int GetNumero () {
+    return numero;
   }
 
-  public int Binario () {
-    private int ControleDivisao = 1;
-    private int bin = 0;
+  public string Binario () {
+    int resto;
+    string resultado = "";
     
-    bin = bin ((numero % 2) * ControleDivisao);
-    numero = numero / 2;
+    while (numero > 0) {
+      resto = numero % 2;
+      numero = numero / 2;
+      resultado = resto.ToString() + resultado;
+    }
 
-    ControleDivisao = ControleDivisao * 10;  
-    bin = bin ((numero % 2) * ControleDivisao);
-    numero = numero / 2
-    return bin;
+    return resultado;
+  }
+
+  public override string ToString () {
+    return $"Decimal {numero}\nBinario {Binario()}";
   }
   
 }
@@ -32,6 +36,6 @@ class ConversorDB {
 class MainClass {
   public static void Main () {
     ConversorDB x = new ConversorDB (4);
-    Console.WriteLine(x.Binario());
+    Console.WriteLine(x);
   }
 }
