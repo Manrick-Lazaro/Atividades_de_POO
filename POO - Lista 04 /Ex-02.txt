@@ -1,0 +1,26 @@
+A)
+
+Main Stack
+a = @ -> Pessoa Stack
+b = @ -> Pessoa Stack
+c = @ -> Pessoa Stack
+
+Pessoa Stack 
+nome = @ -> ""
+idade = 0
+this = @ -> Pessoa Heap
+
+SetFiliação Main
+a.SetFiliação -> @, @
+
+SetFiliação Pessoa Stack
+pai = @ -> b 
+mae = @ -> c
+this = @ -> Pessoa Heap
+
+Pessoa Heap
+nome = @ -> ""
+idade = 0
+pai = @ -> b
+mae = @ -> c 
+

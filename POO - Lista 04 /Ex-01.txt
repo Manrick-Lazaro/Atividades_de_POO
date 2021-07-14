@@ -1,0 +1,50 @@
+A)
+
+Main Stack
+x = @ -> Triangulo Stack
+y = @ -> Triangulo Stack
+z = 0
+bx = 0
+rx = 0
+cx = @ -> ""
+
+
+Triangulo Stack
+b = 0
+h = 0
+c = 0
+this = @ -> Triangulo Heap
+
+
+Triangulo Heap
+b = 10
+h = 20
+c = @ -> "Azul"
+
+Heap
+"Azul"
+
+
+
+
+B)
+
+Main Stack
+x = @ -> Triangulo Stack
+y = @ -> Triangulo Stack
+z = 0
+bx = 0
+rx = 0
+cx = @ -> ""
+
+
+GetBHC Stack
+b = @ -> b Triangulo Heap
+h = @ -> h Triangulo Heap
+C = @ -> c @ -> "Azul"
+
+
+
+
+
+
